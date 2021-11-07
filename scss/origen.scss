@@ -1,0 +1,69 @@
+//IMPORT
+@import "estilos";
+
+$purple: rgb(121, 45, 104);
+$rosaclaro: rgb(223, 196, 196);
+$colortitulos:  #e18fff;
+
+header {
+    font-family: Pacifico;
+    font-size: 40px;
+    margin: 20px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+
+.footer__link {
+    color: $rosaclaro;
+}
+
+.botonverproductos {
+    color: $rosaclaro;
+    background-color: $purple;
+}
+
+/*fondo de la fila 1 de la tabla de la página de preguntas frecuentes*/
+.titulotabla{
+    background-color: rgb(119, 39, 75);
+}
+/*BUCLE*/
+@for $var from 1 through 3 {
+    h#{$var} {
+        color: $colortitulos;
+    }
+}
+
+/*CONDICIONAL*/
+$fondo: body;
+body {
+@if $fondo==body {
+    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);    
+}
+}
+/*EACH*/
+@each $secciones in nav, footer {
+#{$secciones} {
+    background-color: $purple; 
+}   
+}
+
+/***************** Animaciones, transformaciones y transiciones ****************/
+img {
+    height: 200px;
+    width: 200px; 
+    transform: scale(0,75,0,75);
+}
+img:hover { 
+    height: 300px;
+    width: 300px;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+        100% {
+            opacity: 1;
+        }
+    }
