@@ -61,10 +61,6 @@ footer {
   background-color: #792d68; }
 
 /***************** Animaciones, transformaciones y transiciones ****************/
-img {
-  height: 400px;
-  width: 300px; }
-
 img:hover {
   filter: opacity(0.5); }
 
