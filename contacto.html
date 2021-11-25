@@ -38,9 +38,9 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="productos.html">Todos los productos</a></li>
-                      <li><a class="dropdown-item" href="productos1.html">Productos 1</a></li>
+                      <li><a class="dropdown-item" href="productos1.html">Cuadros</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="productos2.html">Productos 2</a></li>
+                      <li><a class="dropdown-item" href="productos2.html">Tazas y bols</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -63,61 +63,69 @@
       <!-- fin Menú -->
         <header class="header text-center">
             <!-- encabezado -->
-            <h1>Títlulo de mi página</h1>
+            <h1>Contacto</h1>
         </header>
-           <h2 class="text-center">Contacto</h2> 
                  
-        <h3 class="text-center">Para contactarte, completá el siguiente formulario.</h3>
+        <h2 class="text-center">Para contactarte, completá el siguiente formulario.</h2>
         <p class="text-center">Nos contactaremos a la brevedad.</p>
         <main>
-          <!-- inicio contenido principal -->
-            <form  class="container" action="">
-            <fieldset>
-                <legend>Datos personales</legend>
-                           <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" placeholder="Juan"><br>
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" placeholder="Perez"> <br>
-            <p>Género:</p>
-            <div>Masculino</div>
-            <input type="radio" name="genero" value="masculino">
-            <div>Femenino</div>
-            <input type="radio" name="genero" value="femenino">
-            <div>Otro</div>
-            <input type="radio" name="genero" value="otro"> <br>
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend>Datos de contacto</legend>
-            <label for="teléfono">Teléfono:</label>
-            <input type="text" name="teléfono" placeholder="XXXX-XXXX"> <br>
-            <label for="correo">Mail:</label>
-            <input type="email" name="correo" placeholder="tumail@ejemplo.com"> <br>
-            <label for="contraseña">Contraseña</label>
-            <input type="password" name="contraseña" placeholder="***********"><br>
-            <br>
-            </fieldset>
-            <fieldset>
-            <legend>Consulta</legend>
-            <div>Seleccioná el motivo de tu consulta:</div>
-            <select name="motivo">
-                <option value="consulta">Consulta</option>
-                <option value="pedido">Pedido personalizado</option>
-                <option value="reclamo">Reclamo</option>
-            </select><br> 
-           
+          <!--inicio contenido principal-->
+          <h3>Datos personales</h3>
+          <!--pedido de nombre y apellido-->
+          <div class="row g-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre/s" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido/s" aria-label="Last name">
+            </div>
+          </div>         
+          <!--cnosulta genero-->
+          <h4>Género</h4>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Femenino
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Masculino
+            </label>
+            </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Otro
+            </label>
+          </div>
+          <h3>Datos de contacto</h3>
+          <!--pedido de telefono, mail y contraseña-->
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Contraseña</label>
+          </div>
+          <h3>Motivo de consulta</h3>
+          <!--desplegable para motivo de consulta-->
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Seleccioná el motivo de tu consulta</option>
+            <option value="consulta">Consulta</option>
+            <option value="pedido">Pedido personalizado</option>
+            <option value="reclamo">Reclamo</option>
+          </select>
+          <h3>Dejá tu mensaje:</h3>
+          <!--cuadro para dejar mensaje-->
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Mensaje</label>
+          </div>
+          <input type="submit" value="Enviar mensaje"/>
 
-            <br>
-            <label for="comentarios"> Dejá tu mensaje:</label><br>
-            <textarea name="comentarios" id="" cols="30" rows="10"></textarea> <br>
-            <input type="submit" value="Enviar mensaje"/>
-            <input type="reset" value="Deshacer"/>
-            <div>Acepto los términos y condiciones</div>
-            <input type="checkbox" name="Acepta" value="1">
-
-             </fieldset>
-        
-            </form>
             <!-- fin contenido principal -->
         </main> 
         <!-- pie de pagina -->
@@ -130,10 +138,10 @@
                 <a class="nav-link footer__link" href="productos.html">Todos los productos</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link footer__link" href="productos1.html">Productos 1</a>
+                  <a class="nav-link footer__link" href="productos1.html">Cuadros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link footer__link" href="productos2.html">Productos 2</a>
+                  <a class="nav-link footer__link" href="productos2.html">Tazas y bols</a>
                 </li>
               <li class="nav-item">
                 <a class="nav-link footer__link" href="historia.html">Historia</a>

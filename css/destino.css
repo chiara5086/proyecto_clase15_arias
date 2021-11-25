@@ -25,6 +25,16 @@ header {
   color: #dfc4c4;
   background-color: #792d68; }
 
+.padding {
+  padding: 30px; }
+
+.padding_div {
+  padding: 100vh; }
+
+.img-responsive {
+  max-width: 100%;
+  height: auto; }
+
 /*fondo de la fila 1 de la tabla de la página de preguntas frecuentes*/
 .titulotabla {
   background-color: #77274b; }
@@ -52,13 +62,11 @@ footer {
 
 /***************** Animaciones, transformaciones y transiciones ****************/
 img {
-  height: 200px;
-  width: 200px;
-  transform: scale(0, 75, 0, 75); }
+  height: 400px;
+  width: 300px; }
 
 img:hover {
-  height: 300px;
-  width: 300px; }
+  filter: opacity(0.5); }
 
 @keyframes aparecer {
   0% {
